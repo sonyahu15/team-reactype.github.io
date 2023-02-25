@@ -5,7 +5,7 @@ const path = require("path");
 // -----------------
 
 console.log("** PATH ** --> ", path.resolve(__dirname, "./docs/index.html")); // Console log to Terminal to TEST & confirm correct file path is configured -- ALSO ensure to require in path library above
-// ABOVE yields "/app/docs/index.html" in 'heroku logs' CLI...
+// ABOVE log yields "/app/docs/index.html" in 'heroku logs' via CLI...
 // ...and "/Users/sarahkhuwaja/brett/CS-work/team-reactype.github.io/docs/index.html" for npm start
 
 // -----------------
@@ -28,5 +28,7 @@ app.listen(PORT, () => {
 
 // For express
 // app.listen(3000);
+
+// -----------------
 
 // RUN w/ 'node server.js' or 'npm start' in CLI
