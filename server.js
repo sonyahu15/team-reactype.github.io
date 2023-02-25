@@ -4,7 +4,9 @@ const path = require("path");
 
 // -----------------
 
-console.log(path.resolve(__dirname, "./docs/index.html")); // Console log to Terminal to TEST & confirm correct file path is configured -- ALSO ensure to require in path library above
+console.log("** PATH ** --> ", path.resolve(__dirname, "./docs/index.html")); // Console log to Terminal to TEST & confirm correct file path is configured -- ALSO ensure to require in path library above
+// ABOVE yields "/app/docs/index.html" in 'heroku logs' CLI...
+// ...and "/Users/sarahkhuwaja/brett/CS-work/team-reactype.github.io/docs/index.html" for npm start
 
 // -----------------
 
@@ -18,6 +20,13 @@ app.use(express.static(path.resolve(__dirname, "./docs")));
 
 // -----------------
 
-app.listen(3000);
+// For Heroku --> https://help.heroku.com/P1AVPANS/why-is-my-node-js-app-crashing-with-an-r10-error
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Our app is running on port ${PORT}`);
+});
+
+// For express
+// app.listen(3000);
 
 // RUN w/ 'node server.js' or 'npm start' in CLI
