@@ -1,0 +1,27 @@
+{
+  "name": "team-reactype.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brett-webster/team-reactype.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brett-webster/team-reactype.github.io/issues"
+  },
+  "homepage": "https://github.com/brett-webster/team-reactype.github.io#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
