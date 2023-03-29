@@ -96,6 +96,11 @@
           <li class="nav-item-text">
             <a class="nav-link" id="meet-link" href="#team">Meet the Team</a>
           </li>
+          <li class="nav-item-text">
+            <a class="nav-link" id="meet-link" href="http://reactypev15-env.eba-mbvivk7k.us-east-1.elasticbeanstalk.com/#/login"
+              >Reactype.dev</a
+            >
+          </li>
         </ul>
       </div>
       <div id="right-nav" class="col-6 d-flex flex-row">
@@ -142,8 +147,8 @@
             <em style="color: #fdb849; opacity: 0.9">Gatsby.js</em>
           </p>
           <div id="header-buttons" class="text-center mt-5">
-            <a type="button" class="btn btn-info" href="#download-section"
-              >Download Now</a
+            <a type="button" class="btn btn-info" href="http://reactypev15-env.eba-mbvivk7k.us-east-1.elasticbeanstalk.com/#/login"
+              >Try Here</a
             >
             <a type="button" href="tutorial.html" class="btn btn-link text-info"
               >Take the Tutorial <i class="bi bi-chevron-double-right"></i
@@ -154,7 +159,7 @@
           class="display-3 align-self-center text-center"
           style="color: rgb(77, 206, 211)"
         >
-          <strong>ReacType 14.0</strong>
+          <strong>ReacType 15.0</strong>
         </h1>
       </div>
     </header>
@@ -540,7 +545,7 @@
             <strong>ReacType</strong>
           </h1>
           <small class="text-muted text-sm-left text-center"
-            >Copyright &#169; ReacType 2022</small
+            >Copyright &#169; ReacType <span id="currentYear"></span></small
           >
         </div>
         <div id="footer-contributors" class="col-sm-6">
@@ -1044,6 +1049,23 @@
 
               <div class="contributor mb-3">
                 <a
+                  href="https://github.com/GarrettHutson"
+                  target="_blank"
+                  class="footer-link"
+                  style="text-decoration: none"
+                >
+                  <i class="bi bi-github mr-2 footer-link"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/garrett-hutson-84144b237"
+                  target="_blank"
+                  class="footer-link"
+                  ><i class="bi bi-linkedin mr-2"></i>Garrett Hutson</a
+                >
+              </div>
+
+              <div class="contributor mb-3">
+                <a
                   href="https://github.com/huypham048"
                   target="_blank"
                   class="footer-link"
@@ -1056,6 +1078,23 @@
                   target="_blank"
                   class="footer-link"
                   ><i class="bi bi-linkedin mr-2"></i>Huy Pham</a
+                >
+              </div>
+
+              <div class="contributor mb-3">
+                <a
+                  href="https://github.com/iancdavis"
+                  target="_blank"
+                  class="footer-link"
+                  style="text-decoration: none"
+                >
+                  <i class="bi bi-github mr-2 footer-link"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/icdavis/"
+                  target="_blank"
+                  class="footer-link"
+                  ><i class="bi bi-linkedin mr-2"></i>Ian Davis</a
                 >
               </div>
 
@@ -1261,6 +1300,23 @@
                   target="_blank"
                   class="footer-link"
                   ><i class="bi bi-linkedin mr-2"></i>Michael Ng</a
+                >
+              </div>
+
+              <div class="contributor mb-3">
+                <a
+                  href="https://github.com/mdunnmon"
+                  target="_blank"
+                  class="footer-link"
+                  style="text-decoration: none"
+                >
+                  <i class="bi bi-github mr-2 footer-link"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/michaeldunnmon/"
+                  target="_blank"
+                  class="footer-link"
+                  ><i class="bi bi-linkedin mr-2"></i>Mike Dunnmon</a
                 >
               </div>
 
@@ -1623,6 +1679,23 @@
 
               <div class="contributor mb-3">
                 <a
+                  href="https://github.com/Yoheze"
+                  target="_blank"
+                  class="footer-link"
+                  style="text-decoration: none"
+                >
+                  <i class="bi bi-github mr-2 footer-link"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/yohan-jeon1"
+                  target="_blank"
+                  class="footer-link"
+                  ><i class="bi bi-linkedin mr-2"></i>Yohan Jeon</a
+                >
+              </div>
+
+              <div class="contributor mb-3">
+                <a
                   href="https://github.com/kr1spybacon"
                   target="_blank"
                   class="footer-link"
@@ -1660,6 +1733,7 @@
         </div>
       </div>
     </footer>
+    <script> document.getElementById('currentYear').textContent = new Date().getFullYear();</script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
